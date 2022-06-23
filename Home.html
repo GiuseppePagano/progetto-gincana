@@ -57,16 +57,19 @@
         ul {
             list-style: none;
         }
+        .fixed-nav-bar { position: fixed; top: 0; left: 0; z-index: 9999; width: 100%; height: 50px; }
+
     </style>
     <script>
         function changeAll() { document.getElementById('div1').style.color = 'blue'; }
 
         function changeBack() { document.getElementById('div1').style.color = 'black'; } 
+  
     </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg  navbar-light bg-light">
+    <nav class="navbar fixed-nav-bar navbar-inverse navbar-fixed-top navbar-expand-lg  navbar-light bg-light">
         <a class="navbar-brand"> <img src="assets/logoMCLMESSINA.png" width="115" height="45" alt="logo"> </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
