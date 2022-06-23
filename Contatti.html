@@ -14,26 +14,119 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
         }
 
         .container {
             margin-top: 20px;
+            max-width: 1170px;
+            margin: auto;
         }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
         h1 {
-            font-family: 'Franklin Gothic Medium', monospace;
+
             margin-top: 40px;
 
         }
-        p {
-            font-family: 'Franklin Gothic Medium', monospace;
-        }
-        
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            background-color: #4d4e52;
+            padding: 70px 0;
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            font-size: 16px;
+            text-transform: capitalize;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
     </style>
+    <script>function changeAll() { document.getElementById('div1').style.color = 'blue'; }</script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light mb-5">
         <a class="navbar-brand"> <img src="assets/logoMCLMESSINA.png" width="115" height="45" alt=""> </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,9 +146,9 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container mt-4" id="div1" onmouseover="changeAll()">
 
-        <h1>Contattaci se desideri chiarimenti o<br> informazioni su servizi e attività. <h1>
+        <h1>Contattaci se desideri autare a migliorare la città, <br> per informazioni su servizi e attività. <h1>
 
                 <form>
                     <div class="row">
@@ -78,23 +171,31 @@
                         <div class="col mt-4">
                             <textarea class="form-control" id="exampleFormControlTextarea1"
                                 placeholder="Lasciaci un messaggio" rows="3"></textarea>
-                            <button type="button" class="btn btn-secondary btn-lg btn-block mt-3">Invia</button>
+                            <button type="button" class="btn btn-secondary btn-lg btn-block mt-3 mb-5">Invia</button>
                         </div>
                     </div>
                 </form>
 
-                
 
-            <footer>
-            <div class="jumbotron jumbotron-fluid" style="padding:0">
-                <div class="container">
-                  <h1 class="display-4"> </h1>
-                  <p class="lead">Contatti : <br> Telefono: 12345667; <br> Email: info@gmail.com <br>   Indirizzo: Via Romagnosi n°2, Messina<br>
-                    <a>Sito:</a><a href="http://www.mcl.messina.it/">http://www.mcl.messina.it/</a> <br> </p> <br>
-                   
-                </div>
-              </div>
-            </footer>
+
+                <footer class="footer ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>Contatti</h4>
+                                <ul>
+                                    <li><a href="#">Telefono:123456</a></li>
+                                    <li><a href="info@gmail.com">info@gmail.com</a></li>
+                                    <li><a href="http://www.mcl.messina.it/">http://www.mcl.messina.it/</a></li>
+
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </footer>
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
                     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
                     crossorigin="anonymous"></script>

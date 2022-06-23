@@ -16,25 +16,51 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
         }
 
         .container {
             margin-top: 20px;
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
         }
 
         h1 {
-            font-family: 'Franklin Gothic Medium', monospace;
+
             margin-top: 40px;
 
         }
-        p {
-            font-family: 'Franklin Gothic Medium', monospace;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
         }
     </style>
+     <script>function changeAll() { document.getElementById('div1').style.color = 'blue'; }</script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light">
         <a class="navbar-brand"> <img src="assets/logoMCLMESSINA.png" width="115" height="45" alt=""> </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,17 +82,20 @@
 
 
 
-    <div class="container">
+    <div class="container mt-4" id="div1" onmouseover="changeAll()">
 
 
         <h1> Un'opportunità per ME  "La gincana del sabato"</h1>
+
+    </div>
+    <div class="container">
         <p>Il progetto "Un'opportunità per ME,'La Gincana del sabato'" si pone
             l'obiettivo di trascinare il giovane messinese nella riscoperta di luoghi marginali, tradizioni
             e culture radicate nel territorio ormai accantonate, in cui egli stesso si muove, attraverso la
             promozione di attività ludico-ricreative volte ad affrontare le tematiche sociali più urgenti:
             la riqualificazione del territorio e la conseguente ripopolazione delle zone marginali.</p>
 
-
+        
         <h1>Le nostre attività</h1>
         <div class="row">
             <div class="col-md-4">
@@ -105,37 +134,8 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="container">
-
-                <h1>Aiutaci a migliorare la Città <h1>
-        
-                        <form>
-                            <div class="row">
-                                <div class="col mt-4">
-                                    <input type="text" class="form-control" placeholder="Inserisci il nome">
-                                </div>
-                                <div class="col mt-4">
-                                    <input type="text" class="form-control" placeholder="Inserisci il cognome">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-4">
-                                    <input type="text" class="form-control" placeholder="Inserisci l'email">
-                                </div>
-                                <div class="col mt-4">
-                                    <input type="text" class="form-control" placeholder="Inserisci l'oggetto">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mt-4">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1"
-                                        placeholder="Lasciaci un messaggio" rows="3"></textarea>
-                                    <button type="button" class="btn btn-secondary btn-lg btn-block mt-3">Invia</button>
-                                </div>
-                            </div>
-                        </form>
-        
 
               
 
